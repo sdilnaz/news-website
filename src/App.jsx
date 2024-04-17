@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import NewsPage from './components/NewsPage';
 import NewsDetails from './components/NewsDetails';
 import SearchResultPage from './components/SearchResultPage';
+import Footer from './components/Footer';
 
 function App() {
   const [category, setCategory] = useState("general");
@@ -22,6 +23,8 @@ function App() {
           <Route path="/news/:title" element={<NewsDetails />} />
           <Route path="/search/:query" element={<SearchResultPage searchResults={searchResults} page={page} setPage={setPage} />} /> {/* Pass setPage to SearchResultPage */}
         </Routes>
+
+        <Footer/>
       </div>
     </Router>
   );
