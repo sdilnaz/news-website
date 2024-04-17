@@ -52,6 +52,10 @@ const SearchResultPage = () => {
   if (loading) {
     return <div>Loading...</div>;
   }
+  if (!searchResults || searchResults.length === 0 || searchResults.length < (page - 1) * 20) {
+    return <div>No articles found.</div>;
+  }
+
 
   // If articles is undefined or empty, display message
   if (!query || query.length === 0 || searchResults.length === 0) {
