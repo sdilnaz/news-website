@@ -3,7 +3,7 @@
 
 TengriNews Clone is a news application that fetches news articles from various categories and allows users to view the latest news, search for specific topics, and read detailed articles.
 
-##Demonstration 
+
 ![](https://github.com/sdilnaz/news-website/blob/master/vid.gif)
 
 
