@@ -3,6 +3,10 @@
 
 TengriNews Clone is a news application that fetches news articles from various categories and allows users to view the latest news, search for specific topics, and read detailed articles.
 
+##Demonstration 
+![](https://github.com/sdilnaz/news-website/blob/master/vid.gif)
+
+
 ## Project Structure
 
 The project is structured using React and utilizes React Router for navigation. It consists of the following components:
