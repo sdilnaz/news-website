@@ -1,8 +1,8 @@
-
-
 import React, { useEffect, useState } from "react";
 import NewsItem from "./NewsItem";
 import { Link } from 'react-router-dom';
+import TechnologySlider from "./Slider";
+
 
 const NewsPage = ({ category, page, setPage }) => {
   const [articles, setArticles] = useState([]);
@@ -56,8 +56,6 @@ const NewsPage = ({ category, page, setPage }) => {
     return <div>No articles found.</div>;
   }
 
-
-
   // Generate pagination links dynamically
   const paginationItems = [];
   for (let i = 1; i <= totalPages; i++) {
@@ -68,12 +66,12 @@ const NewsPage = ({ category, page, setPage }) => {
     );
   }
 
-
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-      <div className="btn-group btn-group-sm" role="group" aria-label="Small button group" style={{ marginBottom: "20px"}}>
-        <button type="button" className="btn btn-outline-primary" onClick={() => handleSortBy("date")}>Sort by Date</button>
-        <button type="button" className="btn btn-outline-primary" onClick={() => handleSortBy("title")}>Sort by Title</button>
+      <TechnologySlider />
+      <div className="btn-group btn-group-sm" role="group" aria-label="Small button group" style={{ marginBottom: "20px",marginLeft: "175px", alignSelf:"start"}}>
+        <button type="button" className="btn btn-outline-secondary" onClick={() => handleSortBy("date")}>Sort by Date</button>
+        <button type="button" className="btn btn-outline-secondary" onClick={() => handleSortBy("title")}>Sort by Title</button>
       </div>
       <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
         {articles.map((news, index) => {
@@ -81,17 +79,16 @@ const NewsPage = ({ category, page, setPage }) => {
             return null;
           }
           return (
-            
-              <NewsItem
-                key={index}
-                title={news.title}
-                description={news.description}
-                src={news.urlToImage}
-                date={news.publishedAt}
-                content={news.content}
-                author={news.author}
-                url = {news.url}
-              />
+            <NewsItem
+              key={index}
+              title={news.title}
+              description={news.description}
+              src={news.urlToImage}
+              date={news.publishedAt}
+              content={news.content}
+              author={news.author}
+              url = {news.url}
+            />
           );
         })}
       </div>
