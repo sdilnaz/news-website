@@ -19,7 +19,7 @@ The project is structured using React and utilizes React Router for navigation. 
 
 ## Setup Instructions
 
-1. Clone the repository from GitHub: [Repository Link](https://github.com/dilnaz/news-website)
+1. Clone the repository from GitHub: [Repository Link](https://github.com/sdilnaz/news-website)
 2. Install dependencies using `npm install`.
 3. Start the development server with `npm run dev`.
 4. Access the application in your browser at `http://localhost:5173`.
