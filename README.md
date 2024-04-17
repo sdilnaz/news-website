@@ -1,11 +1,8 @@
-
 # TengriNews Clone
 
 TengriNews Clone is a news application that fetches news articles from various categories and allows users to view the latest news, search for specific topics, and read detailed articles.
 
-
 ![](https://github.com/sdilnaz/news-website/blob/master/vid.gif)
-
 
 ## Project Structure
 
@@ -16,19 +13,17 @@ The project is structured using React and utilizes React Router for navigation. 
 - **NewsItem**: Represents an individual news article card with title, description, date, and image.
 - **NewsDetails**: Displays detailed information about a specific news article including title, author, date, image, description, content and link to full article.
 - **SearchResultPage**: Shows search results based on user queries with pagination and sorting options.
-- **Footer**: Footer component providing additional information 
-
-
-
+- **Footer**: Footer component providing additional information
 
 ## Setup Instructions
 
 1. Clone the repository from GitHub: [Repository Link](https://github.com/sdilnaz/news-website)
-2. Install dependencies using `npm install`.
-3. Start the development server with `npm run dev`.
-4. Access the application in your browser at `http://localhost:5173`.
-
-
+2. Go to [NewsApi](https://newsapi.org/) and get API Key
+3. Open '.env_sample' file, change API_KEY to API that you got from step 2
+4. Rename `.env_sample` to `.env` and save
+5. Install dependencies using `npm install`.
+6. Start the development server with `npm run dev`.
+7. Access the application in your browser at `http://localhost:5173` or localhost provided in terminal after running `npm run dev`.
 
 ## Project Development
 
@@ -56,20 +51,18 @@ The project follows an incremental development approach with multiple levels of 
 
 - Utilize web scraping libraries or APIs to dynamically fetch news content from external sources such as Tengri News.
 
-
 ## Methodologies and Approaches
 
-- The project is built using "React Components"  for modular and reusable UI elements.
+- The project is built using "React Components" for modular and reusable UI elements.
 - "React Router" utilized for client-side routing and navigation between different views.
 - Utilized React hooks such as `useState` for managing component state.
 - Integrated the News API to fetch news data based on user requests.
 - Implemented responsive design principles to ensure the application is accessible across various devices.
 
-
 ## Known Issues and Improvements
 
-- Does not support news from Kazakhstan 
+- Does not support news from Kazakhstan
 - Need to improve error handling for API requests and edge cases.
 - UI/UX Enhancements for better usability and visual appeal.
 - Optimize API calls and rendering for improved performance.
-- Add support for multiple languages 
+- Add support for multiple languages
